@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
-import { Link } from 'react-router-dom';
+import { Link,  NavLink} from 'react-router-dom';
 import './Navbar.css';
 import { Input, Space } from 'antd';
 function Navbar() {
@@ -41,9 +41,9 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <NavLink to='/' className='nav-links' activeClassName="nav-links-active" onClick={closeMobileMenu}>
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className='nav-item'>
               <Link
@@ -74,21 +74,30 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
           <div className='navbar_search'>
             <Search
               placeholder="input search text"
               allowClear
               onSearch={onSearch}
               style={{
-                width: 200,
+                width: '200px',
                 color:'white'
               }}
             />
-            <button className='btn_cart'>
-              <i class="fa-regular fa-cart-shopping"></i>
-            </button>
+            <a className='cart' href='/cart'>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <a className='cart' href='/login'>
+              <i class="fa-solid fa-user"></i>
+            </a>
+            <a className='cart'>
+            <i class="fa-solid fa-heart"></i>
+            </a>
           </div>
+          <div className='signin_btn'>
+            {button && <Button buttonStyle='btn--outline'>LOG IN</Button>}
+          </div>
+
         </div>
       </nav>
     </>

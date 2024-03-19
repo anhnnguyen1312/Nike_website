@@ -16,8 +16,7 @@ function Product() {
             />
     );
   return (
-    <>
-    
+    <> 
     <div className='cards'>
       <h1>ALL PRODUCTS</h1>
       {/* <Button buttonStyle=' button btn--primary'> Get Notified</Button> */}

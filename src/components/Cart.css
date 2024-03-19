@@ -1,0 +1,165 @@
+.container{
+    display: flex;
+    width: 100%;
+
+}
+ .row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+ }
+.left_checkout{
+    width: 60%;
+    background-color: white;
+    padding-left: 1rem;
+}
+
+.right_checkout{
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 1rem 1rem 3rem;
+}
+
+.cheackout_header{
+    height: 20vh;
+    align-items: left;
+    padding: 20px 0;
+}
+
+
+.promotion{
+    padding-left: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.promotion_container{
+    background-color: rgb(203, 203, 203);
+
+}
+.buy_now_link{
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+}
+
+.cart_cards{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.cart_card{
+border: 1px solid black;
+margin-top: 2rem;
+}
+.cart_card:nth-last-child(){
+    border-bottom: 1px solid black;
+}
+
+.img_cart{
+    width: 200px;
+    height: 200px;
+
+}
+.img_cart img {
+    width: 100%;
+
+}
+.infor_cart_container{
+    width: calc(100% - 200px);
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+.infor_cart{
+    width: calc(100% - 54px);
+    display: flex;
+flex-direction: column;
+height:80%;
+padding: 20px;
+}
+.size_select{
+    color: black;
+    padding: 10px;
+}
+
+/* .infor_wrapper{
+
+} */
+
+.btn_x{
+    width: 54px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+}
+
+.x{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+}
+
+.cart_summary_container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.cart_summary{
+    padding: 20px 0;
+}
+.payment_btn{
+    background-color: rgb(33, 33, 33);
+    /* border-radius: 50px; */
+    border : transparent;
+    padding: 20px;
+    width: 100%;
+color: white;
+font-size: large;
+box-shadow: 5px 10px #888888;
+
+}
+ 
+.payment_btn_div {
+    padding: 2rem 0;
+}
+.discount_div{
+    display: flex;
+    align-items: center;
+    padding: 2rem 0 ;
+    font-size: 24px;
+}
+
+.payment_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+    font-size: 22px;
+}
+.icon_visa{
+    display: flex;
+
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.icon_visa img{
+width: 48px;
+height: 40px;
+padding: 8px 8px 8px 0;
+
+}
+.row_payment_summary{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    font-size: 20px;
+}

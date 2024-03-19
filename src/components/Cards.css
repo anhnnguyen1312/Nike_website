@@ -1,5 +1,5 @@
 .cards {
-  padding: 4rem;
+  padding: 1rem;
   background: #fff;
 }
 
@@ -12,7 +12,7 @@ h1 {
   flex-flow: column;
   align-items: center;
   max-width: 1120px;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -34,7 +34,7 @@ h1 {
   width:230px;
   /* flex:30%; */
   /* flex: 1; */
-  margin: 1rem 1rem;
+  margin: 0.5rem 0.5rem;
   border-radius: 10px;
 }
 
@@ -124,8 +124,22 @@ flex: 40%;
   }
 } */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 650px) {
   .cards__item {
-    margin-bottom: 2rem;
+    width: 35vw;
+    height: 30vh;
+    min-width: 180px;
+    min-height: 250px;
+    margin: 0.5rem 0;
+  }
+  .cards{
+    padding: 1rem;
+  }
+  .cards__item__info {
+    padding: 10px;
+  }
+  .cards__item__heading{
+    font-size: 14px;
+    line-height: 16px;
   }
 }

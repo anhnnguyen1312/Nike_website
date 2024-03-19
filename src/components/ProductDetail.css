@@ -47,6 +47,8 @@ height: 300px;
     width:456px;
     padding: 30px;
 background-color: white;
+display: flex;
+flex-direction: column;
 }
 
 .headline_pdr{

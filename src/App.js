@@ -1,28 +1,24 @@
 import React from 'react';
-import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import News from './components/pages/News';
 import Products from './components/pages/Products';
-import SignUp from './components/pages/SignUp';
-import Footer from './components/Footer';
-import ProductDetail from './components/ProductDetail';
-
+import LoginForm from './components/LoginForm';
+import CartPage from './components/pages/CartPage';
+import ProductDetailPage from './components/pages/ProductDetailPage';
 function App() {
   return (
     <>
       <Router>
-        <Navbar />
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/news' component={News} />
           <Route path='/products' component={Products} />
-          <Route path='/sign-up' component={SignUp} />
-          <Route path='/ProductDetail' component={ProductDetail} />
-
+          <Route path='/ProductDetail' component={ProductDetailPage} />
+          <Route path='/cart' component={CartPage} />
+          <Route path='/login' component={LoginForm} />
         </Switch>
-        <Footer />
       </Router>
     </>
   );
